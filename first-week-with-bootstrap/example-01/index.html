@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="src/css/styles.css">
+
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Vacation Rentals</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- div containing the toggable navigation -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- navigation menu -->
+            <ul class="navbar-nav mr-auto">
+                <!-- active link corresponding to the current page -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trip Description</a>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Book Travels</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Reservations</a>
+                </li>
+            </ul>
+            <!-- inline form inside the navbar -->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="row">
+        <header class="col jumbotron jumbotron-fluid">
+            <div class="container-fluid">
+                <h1 class="display-4 text-light">
+                    Best Vacation Rentals
+                </h1>
+                <p class="lead text-light">Sed placerat fringilla quam et.</p>
+                <button type="button" class="btn btn-primary btn-lg">Start Now!</button>
+            </div>
+        </header>
+    </div>
+
+    <div class="row">
+        <!-- first column -->
+        <div class="col-sm pb-4">
+            <!-- column content here -->
+            <a href="#">
+                <img class="img-fluid mx-auto d-block mt-4 mb-2 rounded-circle" src="path/to/img" alt="">
+            </a>
+            <h3 class="text-center mb-2">Type 1</h3>
+            <p>
+                Lorem Ipsum...
+            </p>
+            <button class="btn btn-success">Book Now @ $599></button>
+        </div>
+        <!-- second column -->
+        <div class="col-sm pb-4">
+        </div>
+        <!-- third column -->
+        <div class="col-sm pb-4">
+        </div>
+    </div>
+
+    <footer class="row pt-4">
+        <!-- first column -->
+        <div class="col-sm">
+            <small>
+                <p>© 2018</p>
+            </small>
+        </div>
+        <!-- second column -->
+        <div class="col-sm">
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#">About Us</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">Support 24x7</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+        <!-- third column -->
+        <div class="col-sm">
+            <small>
+                <p class="text-right">Vacation Rentals</p>
+            </small>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="./dist/js/bootstrap.js"></script>
+</body>
+
+</html>

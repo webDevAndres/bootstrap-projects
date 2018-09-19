@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Forms</title>
+
+    <link rel="stylesheet" href="src/css/styles.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <p class="h1">Register</p>
+
+        <form class="mt-3">
+            <div class="form-group row">
+                <label for="email" class="col-sm-2 col-form-label">Email address</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control form-control-lg" id="email" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                    <!-- #1 -->
+                    <small id="emailHelp" class="form-text text-muted">
+                        <!-- #2 -->
+                        For authentication purposes only. We will never share your email with anyone!
+                    </small>
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <label for="password" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" id="password" placeholder="Password" class="form-control form-control-lg">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="pricingPlan" class="col-sm-2 col-form-label">Pricing plan</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext" id="pricingPlan" value="Basic"
+                        aria-describedby="pricingPlanHelp"> <!-- #1 -->
+                    <small id="pricingPlanHelp" class="form-text text-muted">
+                        Basic is the only plan so far, but we'll introduce more soon!
+                    </small>
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <label for="role" class="col-sm-2 col-form-label">Your role</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="role">
+                        <option>Developer</option>
+                        <option>Designer</option>
+                        <option>Manager</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <label for="profileUrl" class="col-sm-2 col-form-label">Your profile URL</label>
+                <div class="col-sm-10">
+                    <div class="input-group mb-3">
+                        <!-- #1 -->
+                        <div class="input-group-prepend">
+                            <!-- #2 -->
+                            <span class="input-group-text">http://</span> <!-- #3 -->
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">my.</button>
+                            <div class="dropdown-menu">
+                                <!-- #5 -->
+                                <a class="dropdown-item" href="#">private.</a>
+                                <a class="dropdown-item" href="#">own.</a>
+                            </div>
+                        </div>
+                        <input type="text" id="profileUrl" class="form-control">
+                        <div class="input-group-append">
+                            <!-- #6 -->
+                            <span class="input-group-text">.example.com</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-group row">
+                <label for="comments" class="col-sm-2 col-form-label">Comments (optional)</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="comments" rows="3"></textarea>
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <label for="photo" class="col-sm-2 col-form-label">Your photo</label>
+                <div class="col-sm-10">
+                    <input type="file" class="form-control-file" id="photo">
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <div class="col-10 offset-2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="1" id="userAgreement">
+                        <label class="form-check-label" for="userAgreement">
+                            I accept <a href="#">user agreement</a>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-10 offset-2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="1" id="newsletter">
+                        <label class="form-check-label" for="newsletter">
+                            I'd like to receive newsletters
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row mt-3">
+                <div class="col-10 offset-2">
+                    <button type="submit" class="btn btn-outline-primary btn-lg">Register!</button>
+                    <a href="#" class="btn btn-link">Back</a>
+                </div>
+            </div>
+        </form>
+
+        <p class="h1">Subscribe to our newsletter</p>
+        <form class="form-inline">
+            <!-- #1 -->
+            <label class="sr-only" for="email">Name</label> <!-- #2 -->
+            <input type="text" class="form-control mb-2 mr-sm-2 form-control-sm" id="email" placeholder="Email">
+            <!-- #3 -->
+            <div class="form-check mb-2 mr-sm-2">
+                <!-- #4 -->
+                <input class="form-check-input" type="checkbox" id="partners" value="1">
+                <label class="form-check-label" for="partners">
+                    Receive news from our partners
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2 btn-sm">Subscribe</button>
+            <!-- #5 -->
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="./dist/js/bootstrap.js"></script>
+</body>
+
+</html>

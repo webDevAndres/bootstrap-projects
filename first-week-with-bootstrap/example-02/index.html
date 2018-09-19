@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Modal</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 15px;
+        }
+
+        .card-deck {
+            margin-top: 5px;
+        }
+    </style>
+
+    <script>
+
+          
+// need to use document.ready to use jquery
+        $(document).ready(function() {
+            var options = {
+            'backdrop' : 'static',
+                'show' : false
+                }
+            $('#basicModal').modal(options);
+
+            $('#basicModal').on('shown.bs.modal', function (e) {
+                alert('Modal is successfully shown!');
+        })
+        
+      
+               
+});
+
+</script>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            44 Your First Week With Bootstrap
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Basic Modal </h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Modal Body</h3>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn btn-lg btn-success" data-toggle="modal" data-target="#basicModal">
+            Click to open Modal
+        </a>
+        <div class="card-deck">
+            <div class="card">
+                <!-- card code here -->
+                <div class="card-body">
+                    This is some text within a card body.
+                </div>
+            </div>
+            <div class="card">
+                <!-- card code here -->
+                <div class="card-body">
+                    This is some text within a card body.
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- card code here -->
+                <div class="card-body">
+                    This is some text within a card body.
+                </div>
+            </div>
+        </div>
+
+        <div class="card-group">
+            <div class="card">
+                <!-- card code here -->
+                <div class="card-body">
+                    This is some text within a card body.
+                </div>
+            </div>
+            <div class="card">
+                <!-- card code here -->
+                <div class="card-body">
+                    This is some text within a card body.
+                </div>
+            </div>
+            <div class="card">
+                <!-- card code here -->
+                <div class="card-body">
+                    This is some text within a card body.
+                </div>
+            </div>
+        </div>
+
+        <div class="card-columns">
+            <div class="card">
+                <!-- card code here -->
+                <div class="card-body">
+                    This is some text within a card body.
+                </div>
+            </div>
+            <div class="card">
+                <!-- card code here -->
+                <div class="card-body">
+                    This is some text within a card body.
+                </div>
+            </div>
+            <div class="card">
+                <!-- card code here -->
+                <div class="card-body">
+                    This is some text within a card body.
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                One of three columns
+            </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="./dist/js/bootstrap.js"></script>
+</body>
+
+</html>
